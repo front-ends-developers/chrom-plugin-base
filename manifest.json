@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "Google插件开发基础结构",
+    "version": "1.0",
+    "description": "Chrome扩展",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    // 浏览器右上角图标设置，browser_action、page_action、app必须三选一
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title": "Google extendtion",
+        "default_popup": "popup.html"
+    },
+    // 需要直接注入页面的JS
+    "content_scripts": [],
+    // 权限申请
+    "permissions":
+    [
+        "contextMenus", // 右键菜单
+        "tabs", // 标签
+        "notifications", // 通知
+        "webRequest", // web请求
+        "webRequestBlocking",
+        "storage", // 插件本地存储
+        "http://*/*", // 可以通过executeScript或者insertCSS访问的网站
+        "https://*/*" // 可以通过executeScript或者insertCSS访问的网站
+    ],
+    // 插件主页，这个很重要
+    "homepage_url": "https://www.baidu.com",
+    // 默认语言
+    "default_locale": "zh_CN",
+    // devtools页面入口，注意只能指向一个HTML文件，不能是JS文件
+    "devtools_page": "devtools.html"
+}

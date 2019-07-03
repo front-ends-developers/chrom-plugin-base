@@ -1,0 +1,49 @@
+// 设置徽章 badge
+/*chrome.browserAction.setBadgeText({text: 'New'});
+chrome.browserAction.setBadgeBackgroundColor({color: [255, 0, 0, 255]});*/
+
+// 设置桌面通知
+chrome.notifications.create(null, {
+	type: 'image',
+	iconUrl: 'images/notify256.png',
+	title: '祝福',
+	message: '骚年，祝你圣诞快乐！Merry christmas!',
+	imageUrl: 'images/notify256.png'
+});
+
+//-------------------- 右键菜单演示 ------------------------//
+chrome.contextMenus.create({
+	title: "测试右键菜单",
+	onclick: function(){
+		chrome.notifications.create(null, {
+			type: 'basic',
+			iconUrl: 'images/icon48.png',
+			title: '这是标题',
+			message: '您刚才点击了自定义右键菜单！'
+		});
+	}
+});
+chrome.contextMenus.create({
+	title: '使用度娘搜索：%s', // %s表示选中的文字
+	contexts: ['selection'], // 只有当选中文字时才会出现此右键菜单
+	onclick: function(params)
+	{
+		// 注意不能使用location.href，因为location是属于background的window对象
+		chrome.tabs.create({url: 'https://www.baidu.com/s?ie=utf-8&wd=' + encodeURI(params.selectionText)});
+	}
+});
+
+// 创建自定义面板，同一个插件可以创建多个自定义面板
+// 几个参数依次为：panel标题、图标（其实设置了也没地方显示）、要加载的页面、加载成功后的回调
+chrome.devtools.panels.create('MyPanel', 'images/icon48.png', 'mypanel.html', function(panel)
+{
+	console.log('自定义面板创建成功！'); // 注意这个log一般看不到
+});
+
+// 创建自定义侧边栏
+chrome.devtools.panels.elements.createSidebarPane("Images", function(sidebar)
+{
+	// sidebar.setPage('../sidebar.html'); // 指定加载某个页面
+	sidebar.setExpression('document.querySelectorAll("img")', 'All Images'); // 通过表达式来指定
+	//sidebar.setObject({aaa: 111, bbb: 'Hello World!'}); // 直接设置显示某个对象
+});
