@@ -62,6 +62,19 @@ $('#cnpm').click(() => {
 $('#jenkins').click(() => {
 	chrome.tabs.create({url: 'http://123.207.187.158:8888/jenkins/'});
 });
+$('#gitlab').click(() => {
+	chrome.tabs.create({url: 'http://115.159.76.241/dashboard/groups'});
+});
+$('#yapi').click(() => {
+	chrome.tabs.create({url: 'http://yapi.gicdev.com'});
+});
+$('#showdoc').click(() => {
+	chrome.tabs.create({url: 'http://doc.demogic.com'});
+});
+$('#yuque').click(() => {
+	chrome.tabs.create({url: 'https://www.yuque.com/kgrc1y'});
+});
+
 // dev-gic-web
 $('#dev-gic-web').click(() => {
 	chrome.tabs.create({url: 'http://gicdev.demogic.com/gic-web/#/login'});
@@ -77,15 +90,15 @@ $('#dev-devops-web').click(() => {
 
 // pro-gic-web
 $('#pro-gic-web').click(() => {
-	chrome.tabs.create({url: 'http://gicdev.demogic.com/gic-web/#/login'});
+	chrome.tabs.create({url: 'http://hope.demogic.com/gic-web/#/login'});
 });
 // pro-haoban-web
 $('#pro-haoban-web').click(() => {
-	chrome.tabs.create({url: 'https://www.gicdev.com/haoban-web/#/login'});
+	chrome.tabs.create({url: 'http://www.demosom.com/haoban-web/#/login'});
 });
 // pro-devops-web
 $('#pro-devops-web').click(() => {
-	chrome.tabs.create({url: 'https://www.gicdev.com/operation-platform/#/'});
+	chrome.tabs.create({url: 'https://hope.demogic.com/gic-operations/login'});
 });
 
 $('#dev-devops-web_4').click(() => {
