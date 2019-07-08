@@ -29,7 +29,7 @@
     "http://*/*",
     "https://*/*"
   ],
-  "homepage_url": "https://www.baidu.com",
+  "homepage_url": "https://github.com/front-ends-developers/chrom-plugin-base/tree/open-web",
   "default_locale": "zh_CN",
   "devtools_page": "devtools.html"
 }
