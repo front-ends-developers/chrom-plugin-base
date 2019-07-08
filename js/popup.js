@@ -52,6 +52,16 @@ chrome.devtools.panels.elements.createSidebarPane("Images", function(sidebar)
  * popup 操作
  *
  */
+// 综合
+$('#tapd').click(() => {
+	chrome.tabs.create({url: 'https://www.tapd.cn/my_worktable/#&filter_close=true'});
+});
+$('#cnpm').click(() => {
+	chrome.tabs.create({url: 'http://www.gicdev.com:7002/'});
+});
+$('#jenkins').click(() => {
+	chrome.tabs.create({url: 'http://123.207.187.158:8888/jenkins/'});
+});
 // dev-gic-web
 $('#dev-gic-web').click(() => {
 	chrome.tabs.create({url: 'http://gicdev.demogic.com/gic-web/#/login'});
