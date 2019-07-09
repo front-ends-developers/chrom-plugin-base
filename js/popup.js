@@ -85,6 +85,10 @@ $('#dev-haoban-web').click(() => {
 });
 // dev-devops-web
 $('#dev-devops-web').click(() => {
+	chrome.tabs.create({url: 'http://gicdev.demogic.com/gic-operations/manage_list'});
+});
+// dev-devops-new
+$('#dev-devops-new').click(() => {
 	chrome.tabs.create({url: 'https://www.gicdev.com/operation-platform/#/'});
 });
 
@@ -99,6 +103,10 @@ $('#pro-haoban-web').click(() => {
 // pro-devops-web
 $('#pro-devops-web').click(() => {
 	chrome.tabs.create({url: 'https://hope.demogic.com/gic-operations/login'});
+});
+// pro-devops-new
+$('#pro-devops-new').click(() => {
+	chrome.tabs.create({url: 'https://hope.demogic.com/operation-platform/#/'});
 });
 
 $('#dev-devops-web_4').click(() => {
