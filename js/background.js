@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+	console.log('我被执行了！');
+});
+
 /*
  * 添加右键百度搜索
  */
@@ -9,4 +13,11 @@ chrome.contextMenus.create({
 		// 注意不能使用location.href，因为location是属于background的window对象
 		chrome.tabs.create({url: 'https://www.baidu.com/s?ie=utf-8&wd=' + encodeURI(params.selectionText)});
 	}
+});
+
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse)
+{
+	console.log('收到来自content-script的消息：');
+	console.log(request, sender, sendResponse);
+	sendResponse('我是后台，我已收到你的消息：' + JSON.stringify(request));
 });
