@@ -89,6 +89,10 @@ $('#dev-gic-web').click(() => {
 $('#dev-haoban-web').click(() => {
 	chrome.tabs.create({url: 'https://www.gicdev.com/haoban-web/#/login'});
 });
+// dev-haoban3-web
+$('#dev-haoban3-web').click(() => {
+	chrome.tabs.create({url: 'https://www.gicdev.com/haoban-3/#/login'});
+});
 // dev-devops-web
 $('#dev-devops-web').click(() => {
 	chrome.tabs.create({url: 'http://gicdev.demogic.com/gic-operations/manage_list'});
@@ -96,6 +100,10 @@ $('#dev-devops-web').click(() => {
 // dev-devops-new
 $('#dev-devops-new').click(() => {
 	chrome.tabs.create({url: 'https://www.gicdev.com/operation-platform/#/'});
+});
+// dev-share-config
+$('#dev-share-config').click(() => {
+	chrome.tabs.create({url: 'http://gicdev.demogic.com/share-config/shareIndex'});
 });
 
 // pro-gic-web
@@ -127,7 +135,7 @@ $('#dev-openPlatform-web_4').click(() => {
 	chrome.tabs.create({url: 'https://four.gicdev.com/open-platform/#/index'});
 });
 $('#dev-appCenter-web_4').click(() => {
-	chrome.tabs.create({url: 'https://four.gicdev.com/app-center/#/applyIndex'});
+	chrome.tabs.create({url: 'https://four.gicdev.com/app-center/applyIndex'});
 });
 $('#dev-serverMarket-web_4').click(() => {
 	chrome.tabs.create({url: 'https://four.gicdev.com/market/gic/#/index'});
