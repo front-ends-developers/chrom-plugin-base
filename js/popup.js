@@ -116,7 +116,7 @@ $('#pro-haoban-web').click(() => {
 });
 // pro-haoban3-web
 $('#pro-haoban3-web').click(() => {
-	chrome.tabs.create({url: 'http://www.demosom.com/haoban-3/#/login'});
+	chrome.tabs.create({url: 'https://www.demosom.com/haoban-3/#/login'});
 });
 // pro-devops-web
 $('#pro-devops-web').click(() => {
