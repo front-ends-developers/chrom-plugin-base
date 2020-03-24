@@ -114,6 +114,10 @@ $('#pro-gic-web').click(() => {
 $('#pro-haoban-web').click(() => {
 	chrome.tabs.create({url: 'http://www.demosom.com/haoban-web/#/login'});
 });
+// pro-haoban3-web
+$('#pro-haoban3-web').click(() => {
+	chrome.tabs.create({url: 'http://www.demosom.com/haoban-3/#/login'});
+});
 // pro-devops-web
 $('#pro-devops-web').click(() => {
 	chrome.tabs.create({url: 'https://hope.demogic.com/gic-operations/login'});
