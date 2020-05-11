@@ -128,7 +128,9 @@ $('#pro-devops-new').click(() => {
 });
 
 // 4.0
-
+$('#dev-damo-web_4').click(() => {
+	chrome.tabs.create({url: 'https://www.demogic.com/'});
+});
 $('#dev-devops-web_4').click(() => {
 	chrome.tabs.create({url: 'https://four.gicdev.com/operation-platform/#/'});
 });
