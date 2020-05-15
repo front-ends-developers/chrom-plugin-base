@@ -144,7 +144,7 @@ $('#dev-appCenter-web_4').click(() => {
 	chrome.tabs.create({url: 'https://four.gicdev.com/app-center/applyIndex'});
 });
 $('#dev-serverMarket-web_4').click(() => {
-	chrome.tabs.create({url: 'https://four.gicdev.com/market/gic/#/index'});
+	chrome.tabs.create({url: 'https://four.gicdev.com/market/gic/index'});
 });
 $('#dev-damo-web_4').click(() => {
 	chrome.tabs.create({url: 'https://four.gicdev.com/damo-system/login'});
@@ -168,7 +168,7 @@ $('#pro-appCenter-web_4').click(() => {
 	chrome.tabs.create({url: 'https://ideal.demogic.com/app-center/applyIndex'});
 });
 $('#pro-serverMarket-web_4').click(() => {
-	chrome.tabs.create({url: 'https://ideal.demogic.com/market/gic/#/index'});
+	chrome.tabs.create({url: 'https://ideal.demogic.com/market/gic/index'});
 });
 $('#pro-damo-web_4').click(() => {
 	chrome.tabs.create({url: 'https://ideal.demogic.com/damo-system/login'});
