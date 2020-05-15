@@ -127,7 +127,7 @@ $('#pro-devops-new').click(() => {
 	chrome.tabs.create({url: 'https://hope.demogic.com/operation-platform/#/'});
 });
 
-// 4.0
+// 4.0 开发
 $('#dev-damo-web_4').click(() => {
 	chrome.tabs.create({url: 'https://www.demogic.com/'});
 });
@@ -151,4 +151,28 @@ $('#dev-damo-web_4').click(() => {
 });
 $('#dev-devopsCenter-web_4').click(() => {
 	chrome.tabs.create({url: 'https://four.gicdev.com/gic-app-center/'});
+});
+
+// 4.0生产
+
+$('#pro-devops-web_4').click(() => {
+	chrome.tabs.create({url: 'https://ideal.demogic.com/operation-platform/#/'});
+});
+$('#pro-gateway-web_4').click(() => {
+	chrome.tabs.create({url: 'https://ideal.demogic.com/gateway-web/#/'});
+});
+$('#pro-openPlatform-web_4').click(() => {
+	chrome.tabs.create({url: 'https://ideal.demogic.com/open-platform/#/index'});
+});
+$('#pro-appCenter-web_4').click(() => {
+	chrome.tabs.create({url: 'https://ideal.demogic.com/app-center/applyIndex'});
+});
+$('#pro-serverMarket-web_4').click(() => {
+	chrome.tabs.create({url: 'https://ideal.demogic.com/market/gic/#/index'});
+});
+$('#pro-damo-web_4').click(() => {
+	chrome.tabs.create({url: 'https://ideal.demogic.com/damo-system/login'});
+});
+$('#pro-devopsCenter-web_4').click(() => {
+	chrome.tabs.create({url: 'https://ideal.demogic.com/gic-app-center/'});
 });
