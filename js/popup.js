@@ -128,7 +128,7 @@ $('#pro-devops-new').click(() => {
 });
 
 // 4.0 开发
-$('#dev-damo-web_4').click(() => {
+$('#dev-damo-website_4').click(() => {
 	chrome.tabs.create({url: 'https://www.demogic.com/'});
 });
 $('#dev-devops-web_4').click(() => {
