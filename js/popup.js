@@ -80,6 +80,9 @@ $('#showdoc').click(() => {
 $('#yuque').click(() => {
 	chrome.tabs.create({url: 'https://www.yuque.com/kgrc1y'});
 });
+$('#lanhu').click(() => {
+	chrome.tabs.create({url: 'https://next.lanhuapp.com/web/#/item?fid=9af0d2e6-82bf-44b2-9f01-8c142a3fc99c&commonly=all'});
+});
 
 // dev-gic-web
 $('#dev-gic-web').click(() => {
