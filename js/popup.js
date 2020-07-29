@@ -155,6 +155,9 @@ $('#dev-damo-web_4').click(() => {
 $('#dev-devopsCenter-web_4').click(() => {
 	chrome.tabs.create({url: 'https://four.gicdev.com/gic-app-center/'});
 });
+$('#dev-haoban-web_4').click(() => {
+	chrome.tabs.create({url: 'https://four.gicdev.com/haoban-4/#/index'});
+});
 
 // 4.0生产
 
