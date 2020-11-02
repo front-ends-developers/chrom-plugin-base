@@ -156,7 +156,7 @@ $('#dev-devopsCenter-web_4').click(() => {
 	chrome.tabs.create({url: 'https://four.gicdev.com/gic-app-center/'});
 });
 $('#dev-haoban-web_4').click(() => {
-	chrome.tabs.create({url: 'https://four.gicdev.com/haoban-4/#/index'});
+	chrome.tabs.create({url: 'https://four.gicdev.com/haoban-4/contactsList'});
 });
 
 // 4.0生产
@@ -181,4 +181,7 @@ $('#pro-damo-web_4').click(() => {
 });
 $('#pro-devopsCenter-web_4').click(() => {
 	chrome.tabs.create({url: 'https://ideal.demogic.com/gic-app-center/'});
+});
+$('#pro-haoban-web_4').click(() => {
+	chrome.tabs.create({url: 'https://ideal.demogic.com/haoban-4/contactsList'});
 });
